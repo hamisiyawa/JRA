@@ -1,0 +1,40 @@
+:root {
+    --color-primary: #7d80cb; /* Primary Color */
+    --color-secondary: #5a6abb; /* Secondary Color */
+    --color-accent: #8420d8; /* Accent Color */
+    --color-accent-dark: #6b16b1;
+    --color-neutral: #75a4ce; /* Neutral Tone */
+  }
+
+.buttons{
+  background-color: var(--color-accent);
+  color: white;
+}
+
+.buttons:hover{
+    background-color: var(--color-accent-dark);
+    color: white;
+}
+
+/* navbar */
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 10px 20px;
+    
+}
+.nav-link:hover{
+    color: var(--color-accent-dark);
+}
+
+/* profile section */
+.more-btn{
+    color: var(--color-accent);
+}
+
+.more-btn:hover{
+    color: var(--color-accent-dark);
+}
