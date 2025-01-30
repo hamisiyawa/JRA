@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Website Wireframe</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   <link rel="stylesheet" href="styles.css">
+ 
+
   <style>
       #home {
       background: url('images/bg.jpg') center/cover no-repeat;
@@ -24,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link active" href="#home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About Us</a>
@@ -44,23 +47,22 @@
   </nav>
   <div class="container py-5">
     <!-- Home Section -->
-    <section id="home" class="text-center p-5 rounded my-5">
+    <section id="home" class="text-center p-5 rounded my-3">
       <h1 class="display-4 fw-bold mb-3">Turning Data into Decisions</h1>
       <p class="lead mb-4">Expertise in data analysis, research, and consultancy.</p>
-      <div class="card w-75 mx-auto mb-4">
-        <div class="card-body">
+      
           <h2 class="h5">Highlighted Achievements</h2>
           <ul class="list-unstyled mt-3">
             <li>Kaplan-Meier analysis for cancer survival rates.</li>
             <li>Business ethics proposals for car dealerships.</li>
           </ul>
-        </div>
-      </div>
+       
       <a href="#about" class="btn buttons">Learn More</a>
     </section>
 
     <!-- About Us Section -->
     <section id="about" class="bg-white p-5 shadow rounded mb-5">
+
       <h2 class="h3 fw-bold mb-4">About Us</h2>
       <p class="mb-3">
         Welcome to Joe Techs and Research Hub, founded by an experienced
@@ -74,8 +76,53 @@
           <li>Quantitative Methods Certification</li>
         </ul>
       </p>
-    </section>
 
+      
+      
+    </section>
+    <section id="stats" class="stats section">
+ <!-- stats items -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row my-4">
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Clients</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+        <div class="col-lg-3 col-md-6">
+          <div class="stats-item text-center w-100 h-100">
+            <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Workers</p>
+          </div>
+        </div>
+        <!-- End Stats Item -->
+
+      </div>
+    </div>
+      
+      <!-- end stats items -->
+    </section>
+    
     <!-- Services Section -->
     <section id="services" class="bg-light p-5 rounded mb-5">
       <h2 class="h3 fw-bold mb-4">Our Services</h2>
@@ -228,7 +275,18 @@
 
         </div>
       </footer>
+      <!-- scroll top -->
+     <!-- Back to Top -->
+    <div class="btn p-3 back-to-top"><i class="fa fa-angle-double-up"></i></div>
   </div>
+  <!-- purecounter -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Main JS File -->
+<script src="js/main.js">
+</script>
 </body>
 </html>
