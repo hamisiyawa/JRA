@@ -126,3 +126,24 @@ h6 {
 .more-btn:hover{
     color: var(--color-accent-dark);
 }
+
+/* RESPONSIVENESS */
+@media (max-width: 500px) {
+    #home{
+        padding: 20px !important;
+    }
+    #about{
+      padding: 20px !important;
+    }
+
+    #services{
+      padding: 20px !important;
+    }
+    #portfolio{
+        padding: 20px !important;
+    }
+    #contact{
+        padding: 20px !important;
+    }
+
+  }
