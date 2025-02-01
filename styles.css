@@ -38,6 +38,15 @@ h6 {
     font-family: var(--heading-font);
 }
 
+.modal-header{
+    background-color: var(--color-secondary);
+    color: white;
+}
+
+.btn-close{
+    background-color: rgb(245, 83, 83) !important;
+}
+
 /* back to top */
 .back-to-top {
     position: fixed;
