@@ -12,6 +12,7 @@
     --color-accent-dark: #6b16b1;
     --color-neutral: #75a4ce; /* Neutral Tone */
     --default-color: #444444;
+    --surface-color: #14eb83;
   }
 
 .buttons{
@@ -46,6 +47,59 @@ h6 {
 .btn-close{
     background-color: rgb(245, 83, 83) !important;
 }
+
+/* PHP Email Form Messages
+------------------------------*/
+.error-message {
+    display: none;
+    background: #df1529;
+    color: #ffffff;
+    text-align: left;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.sent-message {
+    display: none;
+    color: #ffffff;
+    background: #059652;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.loading {
+    display: none;
+    background: var(--surface-color);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 24px;
+}
+
+.loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid var(--accent-color);
+    border-top-color: var(--surface-color);
+    animation: php-email-form-loading 1s linear infinite; 
+}
+
+@keyframes php-email-form-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
 
 /* back to top */
 .back-to-top {
@@ -191,6 +245,37 @@ h6 {
 
 .more-btn:hover{
     color: var(--color-accent-dark);
+}
+
+
+/* contact */
+.contact form input[type=text],
+.contact form input[type=email],
+.contact form textarea {
+    font-size: 14px;
+    padding: 10px 15px;
+    box-shadow: none !important;
+    border-radius: 0;
+    color: var(--default-color);
+    border-color: color-mix(in srgb, var(--default-color), transparent 80%) !important;
+}
+
+.contact form input[type=text]:focus,
+.contact form input[type=email]:focus,
+.contact form textarea:focus {
+  border-color: var(--color-accent) !important;
+}
+
+.contact form input[type=text]::placeholder,
+.contact form input[type=email]::placeholder,
+.contact form textarea::placeholder {
+  color: color-mix(in srgb, var(--default-color), transparent 70%) !important;
+}
+
+.contact form button[type=submit] {
+    border: 0;
+    padding: 10px 30px;
+    transition: 0.4s;
 }
 
 /* RESPONSIVENESS */
